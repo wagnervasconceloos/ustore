@@ -1,0 +1,3 @@
+DELETE FROM usuario;
+
+ALTER SEQUENCE usuario_id_seq RESTART WITH 1;

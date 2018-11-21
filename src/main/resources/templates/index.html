@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home</title>
+	<link href="materialize/css/bootstrap.css" rel="stylesheet">
+	<link href="materialize/css/signin.css" rel="stylesheet">
+</head>
+<body>
+		<div class="container">
+			<div class="form-signin" style="background: #42dea4;">
+				<h2 class="text-center">Área restrita</h2>
+				<form method="POST" action="cadastrousuario">
+					<!--<label>Usuário</label>-->
+					<input type="text" name="username" placeholder="Digite o seu usuário" class="form-control"><br>
+					
+					<!--<label>Senha</label>-->
+					<input type="password" name="senha" placeholder="Digite a sua senha" class="form-control"><br>
+					
+					<input type="submit" name="btnLogin" value="" class="btn btn-success btn-block">
+					
+					<div class="row text-left" style="margin-top: 10px;"> 
+						<h4><a href="cadastrousuario">Você ainda não possui se alistou ao exército de Saruman?</a></h4>
+					</div>
+					<div class="row text-right" style="margin-top: 20px;"> 
+						<h4><a href="listar">Veja quem faz parte!</a></h4>
+					</div>
+				</form>
+			</div>
+		</div>	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>	
+</body>
+</html>

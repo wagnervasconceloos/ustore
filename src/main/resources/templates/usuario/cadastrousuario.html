@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Home</title>
+		<link href="materialize/css/bootstrap.css" rel="stylesheet">
+		<link href="materialize/css/signin.css" rel="stylesheet">
+	</head>
+<body>
+	
+		<div class="container">
+			<div class="form-signin" style="background: #42dea4;">
+				<h2 class="text-center">Alistamento</h2>
+				<form method="POST" action="cadastrousuario">
+					<!--<label>Nome</label>-->
+					<input type="text" name="nome" placeholder="Digite o seu nome" class="form-control"><br>
+					
+					<!--<label>Usuário</label>-->
+					<input type="text" name="username" placeholder="Digite a seu usuário" class="form-control"><br>
+					
+					<!--<label>Senha</label>-->
+					<input type="password" name="senha" placeholder="Digite a sua senha" class="form-control"><br>
+					
+					<!--<label>Raça</label>-->
+					<input type="text" name="raca" placeholder="Digite a sua raça" class="form-control"><br>
+					
+					<!--<label>Reino</label>-->
+					<input type="text" name="reino" placeholder="Digite a seu reino" class="form-control"><br>
+					
+					<input type="submit" name="cadastrousuario" value="Cadastrar" class="btn btn-success"><br><br>
+					
+					<div class="row text-center" style="margin-top: 20px;"> 
+						Lembrou? <a href="/">Clique aqui</a> para logar
+					</div>
+				</form>
+			</div>
+		</div>	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
